@@ -10,7 +10,7 @@ namespace RetailStore
 
         public decimal DiscountValue { get; private set; }
 
-        private FixedDiscount()
+        public FixedDiscount()
         {
             DiscountAppliedForEach = 100;
             DiscountValue = 5;

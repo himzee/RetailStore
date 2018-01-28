@@ -6,9 +6,9 @@ namespace RetailStore
 {
     public class PercentageDiscount : IPercentageDiscount
     {
-        private static readonly Lazy<PercentageDiscount> defaultCalc = new Lazy<PercentageDiscount>(() => new PercentageDiscount());
+        //private static readonly Lazy<PercentageDiscount> defaultCalc = new Lazy<PercentageDiscount>(() => new PercentageDiscount());
 
-        public static PercentageDiscount Instance => defaultCalc.Value;
+        //public static PercentageDiscount Instance => defaultCalc.Value;
 
         public decimal DiscountForEmployee { get; private set; }
 
@@ -18,7 +18,7 @@ namespace RetailStore
 
         public int CustomerLoyaltyMinimumYears { get; private set; }
 
-        private PercentageDiscount()
+        public PercentageDiscount()
         {
             DiscountForEmployee = 0.3m;
             DiscountForAffiliate = 0.1m;
