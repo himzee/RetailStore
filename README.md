@@ -14,8 +14,7 @@ Solution Details:
 I have kept the implementation straightforward and simple. In absence of full system context (requirements/expectations, scale of usage, security, performance requirements), I have just emphasized on solving the actual problem with Object oriented mindset.
 
 Building and running the solution:
-- I have built the solution using Visual Studio 2017. 
-- The target runtime version is .NET Core 2.0, so you need this version installed on the target machine.
+- The solution has been built using Visual Studio 2017. The target runtime version is .NET Core 2.0, so you need this version installed on the target machine.
 - The solution consists of just 2 class libraries, their details as follows:
 	o	RetailStore, the main project where the core logic is implemented. I have opted for Class Library project type since we do not require any client code. 
 	o	RetailStore.Tests, is also a Class Library project generated from xUnit Test Project template provided by VS 2017 which has preinstalled xUnit testing framework for creating and running tests. Currently, there are 15 tests which cover all the major scenarios and it's very simple to follow them and understand the code easily.
