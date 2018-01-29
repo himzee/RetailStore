@@ -5,20 +5,17 @@ using System.Text;
 namespace RetailStore
 {
     public class FixedDiscount : IFixedDiscount
-    {        
-        public decimal DiscountAppliedForEach { get; private set; }
-
-        public decimal DiscountValue { get; private set; }
-
+    {                
+        public const int DISCOUNT_APPLIED_OF_EACH = 100;
+        public const decimal DISCOUNT_VALUE = 5;
+        
         public FixedDiscount()
-        {
-            DiscountAppliedForEach = 100;
-            DiscountValue = 5;
+        {           
         }
 
         public decimal ApplyDiscount(decimal billAmount)
         {
-            return ((int)(billAmount / DiscountAppliedForEach)) * DiscountValue;
+            return ((int)(billAmount / DISCOUNT_APPLIED_OF_EACH)) * DISCOUNT_VALUE;
         }
     }
 }

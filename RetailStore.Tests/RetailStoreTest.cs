@@ -29,9 +29,7 @@ namespace RetailStore.Tests
             order.AddItem(TestData.Products[3]);
             order.AddItem(TestData.Products[4]);
 
-            var bill = new Bill(order);
-            //var calculator = new BillCalculator(new PercentageDiscount(), new FixedDiscount());
-            //var calc = BillCalculatorFactory.Instance.Create(PercentageDiscount.Instance, FixedDiscount.Instance);
+            var bill = new Bill(order);            
             Assert.Equal(390, billCalculator.CalculateNetPayableAmount(bill));
         }
 
@@ -44,9 +42,7 @@ namespace RetailStore.Tests
             order.AddItem(TestData.Products[1]);
             order.AddItem(TestData.Products[2]);
 
-            var bill = new Bill(order);
-
-            //var calc = BillCalculatorFactory.Instance.Create(PercentageDiscount.Instance, FixedDiscount.Instance);
+            var bill = new Bill(order);            
             Assert.Equal(190, billCalculator.CalculateNetPayableAmount(bill));
         }
 
@@ -61,8 +57,7 @@ namespace RetailStore.Tests
             order.AddItem(TestData.Products[4]);
 
             var bill = new Bill(order);
-
-            //var calc = BillCalculatorFactory.Instance.Create(PercentageDiscount.Instance, FixedDiscount.Instance);
+            
             Assert.Equal(200, billCalculator.CalculateNetPayableAmount(bill));
         }
 
@@ -79,8 +74,6 @@ namespace RetailStore.Tests
             order.AddItem(TestData.Products[4]);
 
             var bill = new Bill(order);
-
-            //var calc = BillCalculatorFactory.Instance.Create(PercentageDiscount.Instance, FixedDiscount.Instance);
             Assert.Equal(450, billCalculator.CalculateNetPayableAmount(bill));
         }
 
@@ -93,9 +86,7 @@ namespace RetailStore.Tests
             order.AddItem(TestData.Products[1]);
             order.AddItem(TestData.Products[2]);
 
-            var bill = new Bill(order);
-
-            //var calc = BillCalculatorFactory.Instance.Create(PercentageDiscount.Instance, FixedDiscount.Instance);
+            var bill = new Bill(order);            
             Assert.Equal(190, billCalculator.CalculateNetPayableAmount(bill));
         }
 
@@ -109,9 +100,7 @@ namespace RetailStore.Tests
             order.AddItem(TestData.Products[3]);
             order.AddItem(TestData.Products[4]);
 
-            var bill = new Bill(order);
-
-            //var calc = BillCalculatorFactory.Instance.Create(PercentageDiscount.Instance, FixedDiscount.Instance);
+            var bill = new Bill(order);            
             Assert.Equal(260, billCalculator.CalculateNetPayableAmount(bill));
         }
 
@@ -127,9 +116,7 @@ namespace RetailStore.Tests
             order.AddItem(TestData.Products[3]);
             order.AddItem(TestData.Products[4]);
 
-            var bill = new Bill(order);
-
-            //var calc = BillCalculatorFactory.Instance.Create(PercentageDiscount.Instance, FixedDiscount.Instance);
+            var bill = new Bill(order);            
             Assert.Equal(475, billCalculator.CalculateNetPayableAmount(bill));
         }
 
@@ -142,9 +129,7 @@ namespace RetailStore.Tests
             order.AddItem(TestData.Products[1]);
             order.AddItem(TestData.Products[2]);
 
-            var bill = new Bill(order);
-
-            //var calc = BillCalculatorFactory.Instance.Create(PercentageDiscount.Instance, FixedDiscount.Instance);
+            var bill = new Bill(order);            
             Assert.Equal(190, billCalculator.CalculateNetPayableAmount(bill));
         }
 
@@ -158,9 +143,7 @@ namespace RetailStore.Tests
             order.AddItem(TestData.Products[3]);
             order.AddItem(TestData.Products[4]);
 
-            var bill = new Bill(order);
-
-            //var calc = BillCalculatorFactory.Instance.Create(PercentageDiscount.Instance, FixedDiscount.Instance);
+            var bill = new Bill(order);            
             Assert.Equal(285, billCalculator.CalculateNetPayableAmount(bill));
         }
 
@@ -176,9 +159,7 @@ namespace RetailStore.Tests
             order.AddItem(TestData.Products[3]);
             order.AddItem(TestData.Products[4]);
 
-            var bill = new Bill(order);
-
-            //var calc = BillCalculatorFactory.Instance.Create(PercentageDiscount.Instance, FixedDiscount.Instance);
+            var bill = new Bill(order);            
             Assert.Equal(475, billCalculator.CalculateNetPayableAmount(bill));
         }
 
@@ -191,9 +172,7 @@ namespace RetailStore.Tests
             order.AddItem(TestData.Products[1]);
             order.AddItem(TestData.Products[2]);
 
-            var bill = new Bill(order);
-
-            //var calc = BillCalculatorFactory.Instance.Create(PercentageDiscount.Instance, FixedDiscount.Instance);
+            var bill = new Bill(order);            
             Assert.Equal(190, billCalculator.CalculateNetPayableAmount(bill));
         }
 
@@ -207,9 +186,7 @@ namespace RetailStore.Tests
             order.AddItem(TestData.Products[3]);
             order.AddItem(TestData.Products[4]);
 
-            var bill = new Bill(order);
-
-            //var calc = BillCalculatorFactory.Instance.Create(PercentageDiscount.Instance, FixedDiscount.Instance);
+            var bill = new Bill(order);            
             Assert.Equal(285, billCalculator.CalculateNetPayableAmount(bill));
         }
 
@@ -226,8 +203,6 @@ namespace RetailStore.Tests
             order.AddItem(TestData.Products[4]);
 
             var bill = new Bill(order);
-
-            //var calc = BillCalculatorFactory.Instance.Create(PercentageDiscount.Instance, FixedDiscount.Instance);
             Assert.Equal(465, billCalculator.CalculateNetPayableAmount(bill));
         }
 
@@ -240,9 +215,7 @@ namespace RetailStore.Tests
             order.AddItem(TestData.Products[1]);
             order.AddItem(TestData.Products[2]);
 
-            var bill = new Bill(order);
-
-            //var calc = BillCalculatorFactory.Instance.Create(PercentageDiscount.Instance, FixedDiscount.Instance);
+            var bill = new Bill(order);            
             Assert.Equal(190, billCalculator.CalculateNetPayableAmount(bill));
         }
 
@@ -256,9 +229,7 @@ namespace RetailStore.Tests
             order.AddItem(TestData.Products[3]);
             order.AddItem(TestData.Products[4]);
 
-            var bill = new Bill(order);
-
-            //var calc = BillCalculatorFactory.Instance.Create(PercentageDiscount.Instance, FixedDiscount.Instance);
+            var bill = new Bill(order);            
             Assert.Equal(275, billCalculator.CalculateNetPayableAmount(bill));
         }
     }
